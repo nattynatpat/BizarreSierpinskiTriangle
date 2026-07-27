@@ -10,7 +10,7 @@ var mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAge
 //triangle centered at (cx, cy) with circumradius r
 function addTriangle(cx, cy, r){
 	svg.append('polygon')
-		.on("mouseover", function(d){
+		.on("click", function(d){
 			addTriangle(	cx,				cy - r/2, 		r/2);			
 			addTriangle(	cx - r*sin30/2,	cy + r*cos30/2, r/2);			
 			addTriangle(	cx + r*sin30/2,	cy + r*cos30/2, r/2);
