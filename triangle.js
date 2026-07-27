@@ -15,7 +15,7 @@ function addTriangle(cx, cy, r){
 			addTriangle(	cx - r*sin30/2,	cy + r*cos30/2, r/2);			
 			addTriangle(	cx + r*sin30/2,	cy + r*cos30/2, r/2);
 			
-			d3.select(this).on('mouseover', function(){});
+			//d3.select(this).on('mouseover', function(){});
 			d3.select(this).on('click', function(){
 				addTriangle(cx, cy, r);});
 		})
